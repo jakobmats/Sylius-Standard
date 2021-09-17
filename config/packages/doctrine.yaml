@@ -10,6 +10,8 @@ doctrine:
         driver: 'pdo_mysql'
         server_version: '8.0'
         charset: utf8mb4
+        mapping_types:
+            enum: string
 
         url: '%env(resolve:DATABASE_URL)%'
     orm:
